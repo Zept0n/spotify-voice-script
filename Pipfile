@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 pyautogui = "*"
+pygetwindow = "*"
+pywinauto = "*"
+psutil = "*"
 
 [dev-packages]
 
