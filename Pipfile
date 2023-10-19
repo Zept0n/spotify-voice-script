@@ -9,6 +9,7 @@ pywinauto = "*"
 psutil = "*"
 speechrecognition = "*"
 pyaudio = "*"
+keyboard = "*"
 
 [dev-packages]
 
