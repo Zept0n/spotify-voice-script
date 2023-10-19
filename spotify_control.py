@@ -1,6 +1,5 @@
 from pywinauto import Application
 import pygetwindow as gw
-from pywinauto.keyboard import send_keys
 import psutil
 
 class SpotifyControl:
