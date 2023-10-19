@@ -13,7 +13,6 @@ class SpotifyControl:
             print("Error occurred - Spotify process not found:", str(e))
     def spotify_keystroke(self,keystroke):
         try:
-            
             # Get current foreground window
             active_window = gw.getActiveWindow()
 
@@ -22,9 +21,6 @@ class SpotifyControl:
 
             # Get a reference to the Spotify window
             spotify = app.top_window()
-
-            # Minimize the Spotify window
-            #spotify.minimize()
             # Simulate key press
             if keystroke=='^{LEFT}':
                 spotify.send_keystrokes(keystroke)
@@ -52,6 +48,3 @@ class SpotifyControl:
         self.spotify_keystroke('^{UP}')
     def volumedown(self):
         self.spotify_keystroke('^{DOWN}')
-
-control=SpotifyControl()
-control.play_pause()
