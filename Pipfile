@@ -4,7 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pyautogui = "*"
+pygetwindow = "*"
+pywinauto = "*"
+psutil = "*"
+speechrecognition = "*"
+pyaudio = "*"
+pystray = "*"
 
 [dev-packages]
 
