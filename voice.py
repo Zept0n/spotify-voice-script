@@ -2,6 +2,17 @@ import speech_recognition as sr
 import pyaudio
 import sys
 from spotify_control import SpotifyControl
+import keyboard
+
+
+global exiting
+exiting=False
+
+def exit_script():
+    global exiting
+    exiting=True
+    print("Exiting the script.")
+    sys.exit()
 
 try:
     # start listening for voice commands
@@ -16,7 +27,8 @@ try:
     print("Listening...")
     with m as source:
             r.adjust_for_ambient_noise(source,duration=2) # ambient noise adjust
-            while True:  # loop to continuously listen for commands
+            keyboard.add_hotkey('ctrl+x', exit_script)
+            while exiting == False:  # loop to continuously listen for commands
                 try:
                     audio = r.listen(source, phrase_time_limit=3)
                 except sr.WaitTimeoutError as e:
