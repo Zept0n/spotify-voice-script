@@ -1,7 +1,6 @@
 # Spotify Voice Control
 
-In order to control Spotify with voice commands using the Spotify API you will need Spotify Premium, this project allows you basic control of Spotify with voice commands by sending key combinations to the Spotify Desktop application without Spotify Premium.
-It uses the `speech_recognition` and `pyaudio` libraries to recognize voice commands and the `pywinauto` and `pygetwindow` libraries to control Spotify.
+This script uses local automation to control the Spotify Desktop application through voice commands. It works by simulating keyboard shortcuts to perform actions like play, pause, skip, and volume control. The project uses the `speech_recognition` and `pyaudio` libraries for voice input, and `pywinauto` along with `pygetwindow` to interact with the Spotify window.
 
 ## Installation
 
